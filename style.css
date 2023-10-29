@@ -1,0 +1,1583 @@
+.page{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: transparent;
+}
+
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000000000000000000000000000000000000000000;
+    margin: 0;
+}
+
+.loader{
+    width: 150px;
+    height: 150px;
+    border: 12px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color: #2ecc71;
+    }
+    50%{
+        color: #f1c40f;
+    }
+    75%{
+        color: #e74c3c;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    background: #48E695;
+  
+}
+
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+.parallax{
+    position: relative;
+    height: 100%;
+}
+
+.parallax_mountain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.parallax_mountain_1{
+    /* background: url(img/m_1.png) 0 0 / cover no-repeat; */
+    /* АБО ТАК */
+    background-color: white;
+}
+
+.parallax_mountain_2{
+    z-index: 1;
+    background: url(img/m_2.png) bottom right / 45% no-repeat;
+}
+
+.parallax_mountain_3{
+    z-index: 1;
+    background: url(img/m_3.png) bottom left / 100% no-repeat;
+}
+
+.parallax_fog{
+    background: url(img/fog_1.png) bottom / 100% no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.content{
+    position: relative;
+    background: #fff; 
+    /* background: url(img/m_1.png) 0 0 / cover no-repeat; */
+    
+}
+
+.content_body{
+    max-width: 1170px;
+    margin: 0px auto;
+
+}
+
+.content_header{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.content_title{
+    font-size: 200px;
+    font-size: 150px;
+}
+
+
+
+.content_subtitle{
+    font-size: 120px;
+}
+
+.content_article{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    font-size: 20px;
+    line-height: 24px;
+    /* position: relative; */
+}
+
+.content_article p{
+    margin-bottom: 20px;
+}
+
+
+  
+  .containeranother{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 700px;
+    
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+}
+
+.textanother{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 180%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    mix-blend-mode: screen;
+    filter: brightness(100%);
+}
+
+
+
+.content_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.card{
+    position: relative;
+    width: 880px;
+    height: 480px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background:#48E695;
+    z-index: 10;
+    color:black;
+    font-size: 19px;
+}
+
+.card img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 330px;
+    transition:  0.5s all ease-in-out;
+}
+
+
+.card .content-card{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    padding-top:0;
+    transition: .5s all ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover .content-card{
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img{
+    left: 75%;
+    height: 360px;
+}
+
+
+.promo{
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #48E695;
+    padding: 68px 70px;
+    border-radius: 10px;
+    margin-bottom: 56px;
+    text-align: left;
+}
+
+hh{
+    color: #48E695;
+}
+hh2{
+    color: #48E695;
+}
+
+.special-card:hover .hh{
+    color: rgb(4, 4, 137);
+}
+
+.special-card2:hover .hh2{
+    color: rgb(4, 4, 137);
+}
+
+#promo-first{
+    background: #48E695 url(img/ukraine-heart.png) no-repeat bottom 0px right -100px;
+    background-size: 450px ;
+}
+
+#third-promo{
+    background: #48E695 url(img/underthetree.png) no-repeat bottom 0px right -100px;
+    background-size: 400px ;
+}
+
+#sixth-promo{
+    background: #48E695 url(img/flag.png) no-repeat bottom 0px right 0px; 
+    background-size: 250px ;
+}
+
+#sixth-promo p, #sixth-promo h2{
+    max-width: 80%;
+}
+
+#fourth-promo{
+    background: linear-gradient(rgba(72,230,149, 0.7), rgba(72,230,149, 0.7)), url(img/crimea.jpg) no-repeat;
+    background-size: 100%;
+    height: 250px;
+    margin-top: 50px;
+}
+
+#fifth-promo{
+    background: linear-gradient(rgba(72,230,149, 0.6), rgba(72,230,149, 0.6)), url(img/azovsea.jpg) no-repeat;
+    background-size: 100%;
+    height: 250px;
+}
+
+.hiking-img{    
+    width: 400px;
+    bottom: 0;
+    margin-right: 50px;
+}
+
+.hiking-img4{    
+    width: 300px;
+    bottom: 0;
+}
+
+
+.promo p{
+    line-height: 150%;
+}
+
+.hiking-img2{    
+    width: 400px;
+    bottom: 0;
+    margin-left: 50px;
+}
+
+@keyframes fade-img{
+    0%{
+        filter: drop-shadow(8px 8px 30px 	#320ea1); 
+    }
+    100%{
+        filter: drop-shadow(8px 8px 30px  	#ffe345); 
+    }
+  }
+
+
+@keyframes fade-img2 {
+    0%{
+        filter: drop-shadow(0 0 1rem 	#ffe23f); 
+    }
+    100%{
+        filter: drop-shadow(0 0 4rem 	#ffe345); 
+    }
+  }
+
+  .motherland{
+    margin-left: 50px;
+  }
+
+
+
+  @keyframes fade-img3 {
+    0%{
+        filter: drop-shadow(8px 8px 50px #0056B9);
+    }
+    100%{
+        filter: drop-shadow(8px 8px 50px #FFD800);
+    }
+  }
+
+.imgandtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#third-promo .promo-title{
+    max-width: 80%;
+}
+#third-promo .promo-text{
+    max-width: 80%;
+}
+
+#promo-first .promo-title{
+    max-width: 80%;
+    line-height: 160%;
+}
+#promo-first .promo-text{
+    max-width: 80%;
+}
+
+.card-con{
+    display: flex;
+    justify-content: center;
+}
+
+/* .promo p{
+    max-width: 60%;
+    line-height: 180%;
+} */
+
+#promo-second p{
+    line-height: 140%;
+}
+
+.prom-con{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.prom-con .promo{
+    background: #48E695;
+    width: 900px;
+    font-size: 20px;
+ 
+}
+
+.prom-con p{
+    max-width: 100%;
+    line-height: 150%;
+}
+
+g{
+    color: #E15701;
+}
+
+.pamyatki{
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 50px;
+    z-index: 10055;
+    cursor: text;
+}
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.cards .cardanother{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 450px;
+    background: #48E695;
+    border-radius: 10px;
+    padding-top: 50px;
+    transition: .4s all ease-in-out;
+    width: 400px;
+    padding-top: 50px;
+    z-index: 10;
+
+}
+
+.cards .cardanother:not(:last-child){
+    margin-right: 35px;
+} 
+
+.cards .cardanother:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+    box-shadow: 10px 10px 100px rgba(0,0,0,2);
+}
+
+.cards .cardanother img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 30px;
+} 
+
+
+#myModal{
+    display: none;
+    visibility: visible;
+    position: fixed;
+    z-index: 100;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+
+
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+ 
+}
+
+#myModal{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+ 
+}
+
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+#close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+
+#close:hover, #close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closed-div{
+    display: none;
+}
+
+
+
+/* The Modal (background) */
+.ebcf_modal {
+    
+     /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,.9); /* Black w/ opacity */
+    z-index: 1000000000;
+}
+
+/* Modal Content */
+.ebcf_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 1100px;
+    height: 550px;
+    margin-top: 7%;
+}
+
+.ebcf_modal-content img{
+    width: 1100px;
+    height: 550px;
+  
+}
+
+.modal-img{
+    display: inline-block; 
+    position: relative; 
+}
+
+.modal-img::after{
+    content: "Гора Говерла є найвищою гірською вершиною України (2061 метр). Щороку тисячі людей здійснюють сходження на неї. З Говерли відкривається прекрасний вид на Чорногірський хребет."; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 1000000000000000000000000000000000000; 
+    background: rgba(255, 167, 0, 0.6);
+    color: #fff; 
+    text-align: center; 
+    font-family: 'Oswald';
+    font-size: 30px; 
+    padding: 5px 10px; 
+    border: none; 
+}
+
+/* The Close Button */
+.ebcf_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.ebcf_close:hover,
+.ebcf_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.ebcf_modal2 {
+     /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,.9); /* Black w/ opacity */
+    z-index: 100000000;
+}
+
+/* Modal Content */
+.ebcf_modal-content2 {
+    background-color: #fefefe;
+    margin: auto;
+    width: 900px;
+    height: 550px;
+    margin-top: 7%;
+}
+
+.ebcf_modal-content2 img{
+    width: 900px;
+    height: 550px;
+  
+}
+
+.modal-img2{
+    width: 900px;
+    height: 550px;
+}
+
+.modal-img, .modal-img2{
+    display: inline-block; 
+    position: relative; 
+}
+
+.modal-img2::after{
+    content: "Озеро Синевир є найбільшим і найглибшим високогірним озером України та відомою туристичною атракцією однойменного національного парку. Розташоване на висоті 989 м над рівнем моря."; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 1000000000000000000000000000000000000; 
+    background: rgba(255, 167, 0, 0.6);
+    color: #fff; 
+    text-align: center; 
+    font-family: 'Oswald';
+    font-size: 30px; 
+    padding: 5px 10px; 
+    border: none; 
+}
+
+
+
+/* The Modal (background) */
+.ebcf_modal3 {
+    /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,.9); /* Black w/ opacity */
+    z-index: 100000;
+}
+
+/* Modal Content */
+.ebcf_modal-content3 {
+    background-color: #fefefe;
+    margin: auto;
+    width: 900px;
+    height: 550px;
+    margin-top: 7%;
+}
+
+.ebcf_modal-content3 img{
+    width: 900px;
+    height: 550px;
+  
+}
+
+.modal-img3{
+    width: 900px;
+    height: 550px;
+}
+
+.modal-img3{
+    display: inline-block; 
+    position: relative; 
+}
+
+.modal-img3::after{
+    content: "Якщо Ви любите подорожі Карпатами, Вам обов’язково слід відвідати Скелі Довбуша. Цей таємничий, оповитий легендами куточок точно залишить слід у серці кожного туриста. Багато століть історичних подій лежать на плечах цих кам’яних гігантів."; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 1000000000000000000000000000000000000; 
+    background: rgba(255, 167, 0, 0.6);
+    color: #fff; 
+    text-align: center; 
+    font-family: 'Oswald';
+    font-size: 30px; 
+    padding: 5px 10px; 
+    border: none; 
+}
+
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin-bottom: 60px;
+}
+
+.main-container{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    /* background: #222; */
+    z-index: 1000;
+
+}
+
+.clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+
+.clip1{
+    background: url(img/bukovel-1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+    z-index: 1000;
+}
+
+
+.clip2{
+    background: url(img/bukovel-2.jpg);
+    background-size: cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+
+
+.clip3{
+    background: url(img/bukovel-3.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+.main-container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.main-container .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.clip-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    padding: 20px;
+    background: #48E695;
+    transition: .5s;
+    opacity: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-container .clip:hover .clip-content{
+    bottom: 0;
+    opacity: 1;
+}
+
+
+.info-card{
+    height: 500px;
+    width: 600px;
+    background: #48E695;
+    margin-right: 20px;
+    border-radius: 20px;
+    z-index: 10000;
+}
+
+.info-card h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.info-card p{
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+}
+
+
+.info-card button{
+    width: 140px;
+    height: 40px;
+    margin: auto;
+    border: none;
+    background: #000742;
+    color: #fff;
+    z-index: 10000;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+
+.info-card button:hover{
+    background: #25042A;
+}
+.btn123{
+    display: flex;
+    justify-content: center;
+} 
+
+
+
+.card-box{
+    overflow:hidden;
+       position:relative;
+    padding:45px;
+    box-sizing:border-box;
+   width: 750px;
+    height:480px;
+   background-image:url(img/dgr.jpg);
+    background-position:center;
+    background-size:cover;
+    display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:center;
+    transition:0.3s ease;
+    &:hover{
+      background-position-y:10%;
+       filter: drop-shadow(-9px 16px 0px #343331);
+    }
+    &:hover>.card-info{
+      top:50%;
+   
+    }
+     &:hover>.card-text{
+      top:0;
+       width:100%;
+      text-shadow: 5px 5px 10px rgba(36, 35, 35, 0.13);
+      background-color: #c06200;
+  
+    }
+    &:hover>.card-text>.heading{
+      text-shadow: none;
+    }
+     &:hover>.card-text>.para{
+      text-shadow: none;
+    }
+    .card-text{
+        transition:0.1s ease;
+      margin-bottom:25px;
+       position:absolute;
+      color:white;
+      text-align:center;
+      font-family:$anton;
+       padding:7px 5px;
+      .heading{
+        font-size:35px;text-shadow: 3px 10px 14px #151515
+      }
+      .para{
+         font-size:20px;text-shadow: 3px 10px 14px #151515
+      }
+    }
+    .card-info{
+        transition:0.3s ease;
+      bottom:-50%;
+      position:absolute;
+      width:100%;
+      text-align:center;
+      
+      .info-para{
+      color: white;
+        text-shadow: -2px 0px 11px #151515;
+      }
+      button{
+        padding:7px 18px;
+        border:none;
+       background-color: #ff8107;
+        margin-top:25px;
+        &:hover{
+          color:white;
+         background-color: #c06200;
+        }
+      }
+    }
+    
+  }
+  
+
+  
+  
+  
+  .info-para{
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      background-color: rgba(72, 230, 149, 0.65);
+      width: 750px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: relative;
+  }
+
+
+  #ic{
+      height: 520px;
+      margin-left: 20px;
+  }
+
+
+
+
+
+
+
+
+  .photo-container{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      align-items:center;
+      z-index: 100;
+  }
+
+  .photo-container .hexagon{
+      position: relative;
+      width: 350px;
+      height: 400px;
+      margin: 50px 20px 70px;
+  }
+
+
+  .photo-container .hexagon::before{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    background:radial-gradient(rgba(0,0,0, 0.15), transparent, transparent);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+
+.photo-container .hexagon:hover:before{
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+  .photo-container .hexagon .shape{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:#000;
+      clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+      transition: .5s ;
+  }
+
+  .photo-container .hexagon:hover .shape{
+      transform: translateY(-30px);
+  }
+
+  .shape img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .shape .shape-content{
+    position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+     
+      text-align: center;
+      background: linear-gradient(45deg, #03a9f4, rgba(3,169,244,0.65));
+      color:#fff;
+      opacity: 1;
+      opacity: 0;
+      font-size: 20px;
+      transition: .5s all ease-in-out;s
+  }
+
+  .shape p{
+      width: 340px;
+  }
+
+.hexagon:hover .shape .shape-content{
+    opacity: 1;
+}
+
+
+.change-img {
+    width: 700px;
+    height: 450px;
+    position: relative;
+    perspective: 1000px;
+    margin-top: 50px;
+  }
+  .change-img:hover .front-side-img {
+    transform: rotateY(180deg);
+  }
+  .change-img:hover .back-side-img {
+    transform: rotateY(360deg);
+  }
+  /* Стороны изображения */
+  .front-side-img, .back-side-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    back-side-imgface-visibility: hidden;
+   }
+  .front-side-img img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+  .back-side-img img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+  }
+  .back-side-img {
+    transform: rotateY(180deg);
+  }
+
+
+
+ #pim{
+     transition: .4s all ease-in-out;
+     overflow: hidden;
+    
+ }
+
+ #pim:hover{
+     filter: brightness(1.15);
+     transform: scale(1.1);
+ }
+
+
+ #dimg{
+     transition: .4s all ease;
+ }
+
+ #dimg:hover{
+     filter: grayscale(0.5);
+ }
+
+
+ .carousel-frame {
+    position: relative;
+    width: 900px;
+    height: 500px;
+  
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: inset 60px 0px 60px -60px rgb(0, 0, 0),
+      inset -60px 0px 60px -60px rgb(0, 0, 0);
+    background-image: radial-gradient(
+      circle,
+      transparent,
+      transparent 75%,
+      rgba(0, 0, 0, 0.3)
+    );
+    background-color: white;
+    z-index: 1000;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+  }
+  
+  .carousel-slide img {
+    min-width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    margin-top: -15px;
+    z-index: 10;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+  
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    margin-top: -15px;
+    z-index: 10;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+  
+  .carousel-dots {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    margin: 0 auto;
+    width: max(100px, 15%);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel-dots li {
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-dots .active-dot {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  form{
+    height: 300px;
+    width: 300px;
+    font-size: 23px;
+    z-index: 10000000000000;
+    margin-bottom: 100px;
+}
+
+
+
+
+.request-form__content{
+    height: 520px;
+    width: 300px;
+    margin: auto;
+    background:#48E695;
+    transform: scale(1.2);
+    margin-bottom: 100px;
+    border-radius: 10px;
+    margin-top: -20px;
+    z-index: 10000000000000000000;
+    
+}
+
+
+form .form__group{
+    width: 300px;
+    z-index: 100000000;
+}
+
+form input{
+    font-weight: bold;
+    width: 200px;
+    margin: 0 35px 20px ;
+    height: 35px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    font-size: 14px;
+    z-index: 10000;
+}
+
+
+form select{
+    font-weight: bold;
+    width: 200px;
+    margin: 0 35px 20px ;
+    height: 35px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    font-size: 14px;
+    z-index: 10000;
+}
+
+form h4{
+    margin: 0 35px 20px ;
+}
+
+form textarea{
+    font-weight: bold;
+    width: 200px;
+    margin: 0 35px 20px ;
+    height: 35px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    font-size: 14px;
+    z-index: 10000;
+}
+
+#imya{
+    margin-top: 20px;
+}
+
+form button{
+    cursor: pointer; 
+
+   width: 230px;
+   margin: 0 35px 20px ;
+   height: 45px;
+   padding: 6px 15px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   background: #000742;
+   color: white;
+   font-size: 14px;
+   transition: .3s all ease-in;
+   z-index: 10000;
+   transition: .3s all ease-in-out;
+}
+
+.form button:hover{
+    background: #25042A;
+    z-index: 10000;
+}
+
+.modal-body .request-form__content{
+    background: transparent;
+    margin: 0;
+    z-index: 10000;
+    padding-left: 10px;
+}
+
+.modal-body input{
+    border: none;
+    z-index: 10000;
+}
+
+#promo-special{
+    text-align: center;
+}
+
+
+#sp-p b{
+    font-size: 40px;
+}
+
+imgandtext b{
+    font-size: 40px;
+    
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .hiking-img4{    
+        width: 300px;
+        bottom: 0;
+        animation-name: fade-img;
+        animation-iteration-count: infinite;
+        animation-duration: 2.5s;
+        transition: all 1.2s ease;
+        animation-direction: alternate;
+        filter: drop-shadow(0 0 1rem 	#0056B9);
+    }
+    .hiking-img4:first-child{
+        filter: drop-shadow(8px 8px 30px 	#0056B9);
+    }
+    
+    .hiking-img4:last-child{
+        filter: drop-shadow(8px 8px 30px	#FFD800); 
+    }
+    .hiking-img2{    
+        width: 400px;
+        bottom: 0;
+        animation-name: fade-img2;
+        animation-iteration-count: infinite;
+        animation-duration: 2.5s;
+        transition: all 1.2s ease;
+        animation-direction: alternate;
+        margin-left: 50px;
+    }
+    .hiking-img{    
+        width: 400px;
+        bottom: 0;
+        animation-name: fade-img;
+        animation-iteration-count: infinite;
+        animation-duration: 2.5s;
+        transition: all 1.2s ease;
+        animation-direction: alternate;
+        margin-right: 50px;
+    }
+    .motherland{
+        animation-name: fade-img3;
+        animation-iteration-count: infinite;
+        animation-duration: 2.5s;
+        transition: all 1.2s ease;
+        animation-direction: alternate;
+        margin-left: 50px;
+      }
+    
+}
+
+
+
+
+#special-h1{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .containeranother{
+        display: none;
+    }
+
+    #special-h1{
+        display: block;
+        font-size: 40px;
+    }
+
+    .promo{
+        max-width: 80%;
+        font-size: 10px;
+        padding: 30px 30px;
+    }
+
+    #promo-first{
+        background: #48E695 url(img/ukraine-heart.png) no-repeat bottom 0px right -70px;
+        background-size: 250px ;
+    }
+
+    #promo-first .promo-title{
+        max-width: 80%;
+        line-height: 130%;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    #promo-first .promo-text{
+        max-width: 80%;
+        padding: 0;
+        font-size: 10px;
+    }
+    .hiking-img{
+        display: none;
+    }
+    .imgandtext p{
+        font-size: 12px;
+    }
+    .imgandtext h1{
+        font-size: 15px;
+    }
+    #promo-second{
+        max-width: 80%;
+        font-size: 10px;
+    }
+    #third-promo{
+        max-width: 75%;
+    }
+    #third-promo{
+        background: #48E695 url(img/fgsfsfsfsfs###.png) no-repeat bottom 0px right -100px;
+        background-size: 400px ;
+        font-size: 10px;
+    }
+    .prom-con{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #third-promo .promo-title{
+        max-width: 100%;
+    }
+    #third-promo .promo-text{
+        max-width: 100%;
+    }
+    .boosh{
+        display: none;
+    }
+    .card .content-card{
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .card img{
+        display: none;
+    }
+    
+    .card .content-card{
+    
+        width: 90%;
+        margin: auto;
+    }
+    
+    .card{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .card-con{
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        height: 420px;
+        font-size: 14px;
+        max-width: 80%;
+    }
+    #fourth-promo{
+        background: #48E695;
+        height: 250px;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+    #fifth-promo{
+        background: #48E695;
+        height: 300px;
+        margin-top: 0px;
+        font-size: 12px;
+    }
+    .pamyatki{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    #special-container-card{
+        flex-direction: column;
+    }
+    .special-card{
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 0;
+    }
+    .special-card p{
+        font-size: 14px;
+    }
+    .motherland{
+        margin-left: 0px;
+        margin-top: -10px;
+      }
+    #sixth-promo{
+        font-size: 12px;
+    }
+    #sixth-promo{
+        background: #48E695 url(img/flag.png) no-repeat bottom 0px right -20px; 
+        background-size: 150px ;
+    }
+    #special-container-card2{
+        flex-direction: column;
+    }
+    #oppera{
+        width: 60px;
+        margin: 0;
+        padding: 0;
+    }
+    #special-main{
+        display: none;
+    }
+    .special-card2{
+        max-width: 80%;
+        margin: auto;
+    }
+    
+  #ic{
+    height: 520px;
+    margin: auto;
+}
+.imgandtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    font-size: 16px;
+    text-align: center;
+}
+.hiking-img2{    
+    max-width: 70%;
+    bottom: 0;
+    margin-left: 0px;
+}
+#sp-p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 12px;
+}
+#sp-p b{
+    font-size: 20px;
+}
+
+.hiking-img4{    
+    max-width: 40%;
+}
+.special-card .hh{
+    color: rgb(4, 4, 137);
+}
+
+.special-card2 .hh2{
+    color: rgb(4, 4, 137);
+}
+.loader{
+    display: none;
+}
+.loader-container{
+    display: none;
+}
+#ic h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+#ic p{
+    font-size: 16px;
+}
+
+}   
+@media screen and (max-width: 800px) {
+
+.parallax{
+    display: none;
+}
+}
